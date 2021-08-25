@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SODOR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_request_denied">Permission request denied</string>
+    <string name="new_order">Ada pesanan baru dari </string>
+
+    <array name="pay_methode">
+        <item>Transfer Bank</item>
+        <item>C.0.D</item>
+    </array>
+
+    <array name="category">
+        <item>Sewa Alat</item>
+        <item>Trip</item>
+    </array>
+</resources>

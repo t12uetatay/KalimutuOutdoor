@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/picture" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-24dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/arsip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diarsipkan"
+            android:layout_gravity="center"
+            android:background="@drawable/background_arsip"
+            android:padding="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cat_shape"
+            android:padding="8dp"
+            android:text="$190/day"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#4D000000"
+            android:paddingLeft="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/act_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_horiz_24"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                app:tint="?colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fried Chicken"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:layout_toLeftOf="@+id/layout"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$18"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:text="Stok : 8"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,2 @@
+rootProject.name = "Kalimutu Outdor"
+include ':app'

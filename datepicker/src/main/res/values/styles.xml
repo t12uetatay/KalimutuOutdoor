@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme for SwitchDateTime -->
+    <style name="Theme.SwitchDateTime" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1DA1F2</item>
+        <item name="colorPrimaryVariant">#FFFFFFFF</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FFC107</item>
+        <item name="colorSecondaryVariant">#FF000000</item>
+        <item name="colorOnSecondary">#FFFFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- Header Background -->
+    <style name="Theme.SwitchDateTime.HeaderBackground">
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Content Background -->
+    <style name="Theme.SwitchDateTime.ContentBackground">
+        <item name="android:background">?android:windowBackground</item>
+    </style>
+
+    <!-- Title -->
+    <style name="Theme.SwitchDateTime.TitleDateTimeLabelText">
+        <item name="android:textSize">@dimen/title_date_time_label_text</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Icon -->
+    <style name="Theme.SwitchDateTime.IconDateTimeSwitch">
+        <item name="android:src">@drawable/ic_view_carousel_black_32dp</item>
+    </style>
+
+    <!-- Time  -->
+    <style name="Theme.SwitchDateTime.Time">
+        <item name="timeCircleColor">#e1e1e1</item>
+        <item name="timeCenterColor">?attr/colorPrimary</item>
+        <item name="timeAmPmBackgroundColor">?attr/colorAccent</item>
+        <item name="timeAmPmSelectBackgroundColor">?attr/colorAccent</item> <!-- Alpha is apply-->
+        <item name="timeAmPmTextColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="timeSelectorColor">?attr/colorAccent</item>
+        <item name="timeCircularNumbersColor">#494949</item>
+    </style>
+
+    <!-- Time Label -->
+    <style name="Theme.SwitchDateTime.TimeLabelText">
+        <item name="android:textSize">@dimen/time_label_text</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.SwitchDateTime.TimeLabelAmPm">
+        <item name="android:textSize">@dimen/time_label_AmPm</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Date -->
+    <style name="Theme.SwitchDateTime.Date">
+        <item name="mcv_selectionColor">?attr/colorAccent</item>
+    </style>
+
+    <!-- Date Label -->
+    <style name="Theme.SwitchDateTime.DateLabelMonthAndDay">
+        <item name="android:textSize">@dimen/date_label_month_and_day</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Year Selected-->
+    <style name="Theme.SwitchDateTime.Year">
+        <item name="colorCircleIndicator">?attr/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Year Label -->
+    <style name="Theme.SwitchDateTime.DateLabelYear">
+        <item name="android:textSize">@dimen/date_label_year</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

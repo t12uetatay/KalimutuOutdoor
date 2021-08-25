@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#FF9800</color>
+    <color name="ratingMedium">#FFC107</color>
+    <color name="ratingHigh">#00A300</color>
+    <color name="t">#902196F3</color>
+    <color name="primary_light">#FA4935</color>
+    <color name="primary_dark">#243447</color>
+    <color name="accent_ligt">#B5CC3A</color>
+    <color name="dark_grey">#657786</color>
+    <color name="light_grey">#AAB8C2</color>
+    <color name="extra_light_grey">#E1E8ED</color>
+    <color name="dark_grey_1">#182532</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="profileTextColor">#FF5A1E</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

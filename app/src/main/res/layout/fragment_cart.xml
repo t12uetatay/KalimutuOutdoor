@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SheetDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/buttonshape_transparent"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keranjang"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="?colorSecondaryVariant"
+            android:layout_marginLeft="16dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="8dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                style="@style/viewParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Sewa"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tanggal_sewa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2021-02-01"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_below="@id/txt1"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_baseline_edit_24"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/viewParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp"
+                    android:text="Lama Penyewaan"/>
+
+                <TextView
+                    android:id="@+id/jumlah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_below="@id/txt2"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="4dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/edit_jumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_below="@id/txt2"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+
+                    android:layout_toRightOf="@+id/jumlah"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/ic_baseline_edit_24"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/viewParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Pembayaran"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/pay_methode"
+                    android:layout_below="@id/txt3"
+                    android:paddingBottom="8dp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bayar:"/>
+
+                    <TextView
+                        android:id="@+id/textTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/profileTextColor"
+                        android:text="Rp.0"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textAllCaps="false"
+                    android:text="Buat Pesanan"
+                    android:layout_toRightOf="@+id/layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

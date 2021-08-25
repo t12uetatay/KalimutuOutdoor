@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Branda"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_order"
+        android:enabled="true"
+        android:icon="@drawable/ic_order"
+        android:title="Pesanan"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/action_notifikasi"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:title="Notifikasi"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_user"
+        android:enabled="true"
+        android:icon="@drawable/ic_account"
+        android:title="Akun"
+        app:showAsAction="ifRoom"/>
+</menu>

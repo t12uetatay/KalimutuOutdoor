@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "429230566384",
+    "project_id": "kalimutu",
+    "storage_bucket": "kalimutu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429230566384:android:dd8ab347d400191cb50b35",
+        "android_client_info": {
+          "package_name": "id.t12ue.kalimutu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429230566384-mbjh51gb4jjk3m2ndnf063n782tk50j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.t12ue.kalimutu",
+            "certificate_hash": "360013d8b9b997dea0691691e219d3f0a36ae957"
+          }
+        },
+        {
+          "client_id": "429230566384-n37u58i89cqppm39h9j49pe9ftoks5he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDc2d-k8NXaryaEVfj7PbSu8yaU9fBfBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429230566384-n37u58i89cqppm39h9j49pe9ftoks5he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
